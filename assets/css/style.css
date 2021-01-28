@@ -1,0 +1,26 @@
+body {
+    font-family: fantasy;
+    color: lightgrey;
+}
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    color: grey;
+    padding: 20px;
+}
+header {
+    background-color:black;
+}
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color:grey;
+}
+header h1{
+    c
+}
