@@ -1,6 +1,6 @@
 body {
-    font-family: fantasy;
-    color: lightgrey;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+    color: rgba(232, 219, 219, 0.282);
 }
 header nav ul {
     display: flex;
@@ -9,18 +9,40 @@ header nav ul {
     align-items: center;
     list-style: none;
     color: grey;
-    padding: 20px;
+    padding: 0px 15px;
+    margin: 0px 32px;
 }
 header {
     background-color:black;
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    position: -webkit-sticky;
+    z-index: 9999;
 }
 header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 10px rgba(182, 169, 169, 0.282);
     color:grey;
 }
 header h1{
-    c
+    font-weight: bold;
+    font-size: 38px;
+    color:grey;
+    margin: 0;
+}
+header a {
+    text-decoration: none;
+    color:grey;
+}
+header nav {
+    margin: 7px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
