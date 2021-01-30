@@ -2,6 +2,8 @@ article {
     color:black
 }
 body {
-    margin: 15px;
     font-size: 18px;
+}
+article {
+    padding: 10px 50px ;
 }
