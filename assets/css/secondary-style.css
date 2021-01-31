@@ -1,9 +1,10 @@
 article {
-    color:black
+    color:black;
+    padding: 10px 50px;
 }
 body {
     font-size: 18px;
 }
-article {
-    padding: 10px 50px ;
+p {
+    padding: 5px, 30px;
 }
