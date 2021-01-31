@@ -32,7 +32,14 @@ header nav ul li a {
     text-shadow: 0 0 10px rgba(182, 169, 169, 0.282);
     color:rgb(187, 185, 185);
 }
-
+header a:hover{
+    background-color:red;
+    border-radius: 5px;
+    color:white;
+    font-size:50px;
+    transition: all 500ms;
+    font-size-adjust: 20px;
+}
 header nav ul li a:hover {
     background-color:red;
     border-radius: 5px;
