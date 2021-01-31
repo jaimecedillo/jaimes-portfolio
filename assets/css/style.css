@@ -53,6 +53,9 @@ header nav {
     flex-direction: row;
     flex-wrap: wrap;
 }
-footer {
-    
+.contact-icons{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:space-around;
 }
