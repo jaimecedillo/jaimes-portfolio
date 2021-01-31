@@ -23,35 +23,61 @@
         </nav>
     </header>
 
-    <section id="about" class="bio">
-        <h2 class="section-title">Jaime Cedillo</h2>
-        <div class="bio-info">
-            <image src="./assets/images/jaime.jpg" alt="Picture of Jaime" style=width:400px;height:400px;
-                id="bio-image" />
-            <h3 class="position-title">Web Developer</h3>
-            <p>Hi I'm my name is Jaime, I'm based in Utah, USA. I have skills on HTML, CSS, and GIT. If you're an
-                employer looking for a Web Developer, feel free to look at my work and get in touch with me</p>
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-me">
+            <div class="bio">
+                <div class="bio-image">
+                    <image src="./assets/images/jaime.jpg" alt="Picture of Jaime">
+                </div>
+                <div class="bio-paragraph">
+                    <h3 class="name-title">Jaime Cedillo/Web Developer</h3>
+                    <p>Hi I'm my name is Jaime, I'm based in Utah, USA. I have skills on HTML, CSS, and GIT. If you're
+                        an
+                        employer looking for a Web Developer, feel free to look at my work and get in touch with me</p>
+                </div>
+            </div>
         </div>
     </section>
-    <main>
-        <section id="work">
-            <h2 class="section-title">Work</h2>
-            <div class="run-buddy">
-                <a href="https://jaimecedillo.github.io/run-buddy/"><img src="./assets/images/runbuddy.jpg"
-                        alt="run-buddy link"></a>
-            </div>
-            <div class="other-work">
-                <a href="#"><img src="./assets/images/ninja.jpg" alt="ninja"></a>
-                <a href="#"><img src="./assets/images/fashion.jpg" alt="fashion"></a>
-                <a href="#"><img src="./assets/images/search.jpg" alt="search"></a>
-                <a href=""><img src="./assets/images/game.jpg" alt="game"></a>
 
-            </div>
-        </section>
+    <section id="work">
+        <h2>Work</h2>
+        <div class="flex-container">
+            <a href="https://jaimecedillo.github.io/run-buddy/" class="flex-item runbuddy">
+                <div>
+                    <h3>Run Buddy</h3>
+                    <span>HTML/CSS</span>
+                </div>
+            </a>
+            <a href="#" class="flex-item ninja">
+                <div>
+                    <h3>Ninja</h3>
+                    <span>Mobile App</span>
+                </div>
+            </a>
+            <a href="#" class="flex-item fashion">
+                <div>
+                    <h3>Fashion</h3>
+                    <span>Python</span>
+                </div>
+            </a>
+            <a href="#" class="flex-item search">
+                <div>
+                    <h3>Search Tool</h3>
+                    <span>HTML/CSS/</span>
+                </div>
+            </a>
+            <a href="#" class="flex-item game">
+                <div>
+                    <h3>Awesome Game</h3>
+                    <span>C++/JavaScript</span>
+                </div>
+            </a>
 
-    </main>
+        </div>
+    </section>
     <footer id="contact">
-        <h2 class="section-title">Contact Me</h2>
+        <h2>Contact Me</h2>
         <div class="contact-icons">
             <a href="mailto:serj162004@yahoo.com"><img src="./assets/images/email.png" class="icon" alt="email link"
                     target="_blank" style=width:60x;height:60px> </a>
