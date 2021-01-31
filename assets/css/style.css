@@ -67,7 +67,7 @@ header nav {
 }
 .icon:hover{
     background-color: red;
-    border: 5px solid grey;
+    border: 3px solid grey;
     transform: scale(1.4);
     border-radius: 5px;
 }
@@ -114,12 +114,8 @@ h2 {
     flex: 0 0 150px;
 }
 
-.page-section > div {
+.projects> div {
     flex: 0 0 77%;
-  }
-  
-  .page-section p {
-    margin-bottom: 20px;
   }
   
   .flex-container {
@@ -130,28 +126,32 @@ h2 {
   
   .flex-item {
     border: 5px solid grey;
-    background-color: var(--primary);
     color: black;
     min-height: 150px;
     max-height: 150px;
     flex-basis: calc(50% - 1em);
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     padding: 0 0 10px 0;
     margin: 0.5em;
     text-decoration: none;
     background-blend-mode: soft-light;
-    background-size: 150%;
-    transition: all 0.5s;
+    background-size: cover;
     font-size: 0.9rem;
+    background-position: center;
+    border-radius: 5px;
+    background-color:rgb(240, 230, 230, .2)
   }
-  
+  .flex-item:hover {
+    transform: scale(1.05);
+  }
   .flex-item:first-child {
       min-height: 400px;
       flex-basis: 100%;
-      align-items: center;
   }
-  
+span, #work h3 {
+    background-color:rgb(187, 185, 185);
+}
 .about-me .bio .bio-image img {
     max-width: 100%;
 }
