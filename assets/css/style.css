@@ -92,24 +92,35 @@ h2 {
 
 .about-me {
     position: relative;
-    width: 1000px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     flex-basis: 100%;
     min-height: 400px;
+    background-image: url(../images/jaime.jpg);
+    background-position: right;
+    border-radius: 5px;
+    border-color:1px grey;
+    background-repeat: no-repeat;
+   background-attachment: fixed;
+}
+.name-title {
+    font-size: 30px;
+    font-style: bold;
+    font-family: fantasy;
 }
 .about-me .bio {
     position: relative;
     max-width: 450px;
-    background: red;
-    margin:10px;
-    padding: 15px;
+    background-color: rgb(240, 230, 230, .8);
+    padding: 20px;
     display: flex;
-
+    text-align: center;
 }
 .about-me .bio .bio-image {
+    margin-right: ;
     max-width: 100%;
     flex: 0 0 150px;
 }
@@ -140,10 +151,11 @@ h2 {
     font-size: 0.9rem;
     background-position: center;
     border-radius: 5px;
-    background-color:rgb(240, 230, 230, .2)
+    background-color:rgb(240, 230, 230, .2);
   }
   .flex-item:hover {
     transform: scale(1.05);
+
   }
   .flex-item:first-child {
       min-height: 400px;
@@ -151,6 +163,8 @@ h2 {
   }
 span, #work h3 {
     background-color:rgb(187, 185, 185);
+    padding: 10px;
+    margin:0;
 }
 .about-me .bio .bio-image img {
     max-width: 100%;
