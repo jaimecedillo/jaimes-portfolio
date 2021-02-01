@@ -188,6 +188,31 @@ span, #work h3 {
     background-image: url("../images/game.jpg");
 }
 
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+    header h1 {
+        width: 100px;
+        text-align: center;
+    }
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    footer h2, footer div {
+        text-align: center;
+        width: 100%;
+    }
+  
+    .about-me {
+        flex: 0 70%;
+    }
+ }
 @media screen and (max-width: 600px) {
     header {
         flex-direction: column;
@@ -198,7 +223,7 @@ span, #work h3 {
         flex-basis: 100%;
     }
     header nav ul li a {
-        font-size: 20px;
+        font-size: 5vw;
      }
     h1 {
         text-align: center;
@@ -233,8 +258,5 @@ span, #work h3 {
           font-size: 8vw;
       }
 }  
-       
-       
-        @media screen and (min-width: 600px) {
-
-            @media screen and (min-width: 992px) {
+@media screen and (max-width: 980px) {
+    
