@@ -189,9 +189,21 @@ span, #work h3 {
 }
 
 @media screen and (max-width: 600px) {
-    hi {
-        text-ali
+    header {
+        flex-direction: column;
     }
+    header nav ul{
+        justify-content: center;
+        padding: 0vw;
+        flex-basis: 100%;
+    }
+    header nav ul li a {
+        font-size: 20px;
+     }
+    h1 {
+        text-align: center;
+    }
+    
     .flex-item,
     .flex-item:first-child {
       flex-basis: 100%;
@@ -201,17 +213,24 @@ span, #work h3 {
       min-height: 150px;
     }
     .about-me {
-        text-align: center;
-        display: block;
         background-image: none;
-        margin:0;
+        flex: 0 100%;
+        flex-direction: column;
+        flex-basis: 100;
+      }
+      .about-me .bio .bio-image {
+          align-items: center;
+          flex-direction: column;
       }
       footer {
         flex-direction: column;
         align-items: flex-start;
+        
       }
       h2 {
           width: 100%;
+          margin:0;
+          font-size: 8vw;
       }
 }  
        
