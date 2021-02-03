@@ -2,7 +2,7 @@
     box-sizing: border-box;
   }
 body {
-    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    font-family: 'San Francisco', Helvetica, Arial, san-serif;
 }
 header nav ul {
     display: flex;
@@ -90,39 +90,25 @@ h2 {
     border-bottom: 5px solid grey;
 }
 
-.about-me {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-basis: 100%;
-    min-height: 400px;
-    background-image: url(../images/jaime.jpg);
-    background-position: right;
-    border-radius: 5px;
-    border-color:1px grey;
-    background-repeat: no-repeat;
-   background-attachment: fixed;
-}
 .name-title {
     font-size: 30px;
     font-style: bold;
-    font-family: fantasy;
 }
-.about-me .bio {
-    position: relative;
-    max-width: 450px;
+.bio {
+    width: 100%;
     background-color: rgb(240, 230, 230, .8);
-    padding: 20px;
     display: flex;
-    text-align: center;
+    border: 5px solid grey;
+    border-radius: 5px;
+    padding: 50px;
 }
-.about-me .bio .bio-image {
-    
-    max-width: 100%;
-    flex: 0 0 150px;
+.bio-image {
+    flex: 1;
+    padding: 12px
+}
+.bio-paragraph {
+    flex: 1;
+    padding: 12px
 }
 
 .projects> div {
@@ -203,8 +189,7 @@ span, #work h3 {
         justify-content: center;
     }
 
-    footer h2, footer div {
-        text-align: center;
+    .contact {
         width: 100%;
     }
   
@@ -236,19 +221,12 @@ span, #work h3 {
     .flex-item:first-child {
       min-height: 150px;
     }
-    .about-me {
-        background-image: none;
-        flex: 0 100%;
+    .bio {
         flex-direction: column;
-        flex-basis: 100;
+
       }
-      .about-me .bio .bio-image {
-          align-items: center;
-          flex-direction: column;
-      }
-      .contact-icons{
-        flex-direction: row;
-      }
+    
+  
       h2 {
           width: 100%;
           margin:0;
