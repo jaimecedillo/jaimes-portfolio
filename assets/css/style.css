@@ -90,25 +90,30 @@ h2 {
     border-bottom: 5px solid grey;
 }
 
-.name-title {
-    font-size: 30px;
-    font-style: bold;
-}
 .bio {
     width: 100%;
     background-color: rgb(240, 230, 230, .8);
     display: flex;
     border: 5px solid grey;
     border-radius: 5px;
-    padding: 50px;
+    padding: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
+
 .bio-image {
     flex: 1;
-    padding: 12px
 }
+.bio-image img {
+    object-fit: scale-down;
+    width: 80%;
+    height: 80%;
+}
+
 .bio-paragraph {
     flex: 1;
-    padding: 12px
 }
 
 .projects> div {
@@ -234,4 +239,3 @@ span, #work h3 {
       }
 }  
 @media screen and (max-width: 980px) {
-    
