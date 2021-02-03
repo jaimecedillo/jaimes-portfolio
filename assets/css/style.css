@@ -3,6 +3,7 @@
   }
 body {
     font-family: 'San Francisco', Helvetica, Arial, san-serif;
+    background-color:#00BCD4;
 }
 header nav ul {
     display: flex;
@@ -50,6 +51,7 @@ header h1{
     font-weight: bold;
     font-size: 38px;
     color:rgb(187, 185, 185);
+    margin-left: 25px;
 }
 header a {
     text-decoration: none;
@@ -92,7 +94,7 @@ h2 {
 
 .bio {
     width: 100%;
-    background-color: rgb(240, 230, 230, .8);
+    background-color: cyan;
     display: flex;
     border: 5px solid grey;
     border-radius: 5px;
@@ -103,19 +105,20 @@ h2 {
     align-items: center;
 }
 
-.bio-image {
-    flex: 1;
-}
 .bio-image img {
     object-fit: scale-down;
-    width: 80%;
-    height: 80%;
+    width: 335px;
 }
 
 .bio-paragraph {
-    flex: 1;
+    width: 50%;
+    margin-left:20px;
 }
-
+.bio-paragraph h3 {
+    font-size: 45px;
+    text-align:center;
+    font-style: italic;
+}
 .projects> div {
     flex: 0 0 77%;
   }
@@ -201,7 +204,11 @@ span, #work h3 {
     .about-me {
         flex: 0 70%;
     }
- }
+    .icon {
+        max-width: 40px
+       }
+
+}
 @media screen and (max-width: 600px) {
     header {
         flex-direction: column;
@@ -213,29 +220,30 @@ span, #work h3 {
     }
     header nav ul li a {
         font-size: 5vw;
-     }
+    }
     h1 {
         text-align: center;
     }
     
     .flex-item,
     .flex-item:first-child {
-      flex-basis: 100%;
+        flex-basis: 100%;
     }
-  
+    
     .flex-item:first-child {
-      min-height: 150px;
+        min-height: 150px;
     }
     .bio {
         flex-direction: column;
-
-      }
+    }
     
-  
-      h2 {
-          width: 100%;
-          margin:0;
-          font-size: 8vw;
-      }
+    h2 {
+        width: 100%;
+        margin:0;
+        font-size: 8vw;
+    }
+    .icon {
+     min-width: 40px
+     length: 40px;
+    }
 }  
-@media screen and (max-width: 980px) {
