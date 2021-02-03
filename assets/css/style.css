@@ -120,7 +120,7 @@ h2 {
     text-align: center;
 }
 .about-me .bio .bio-image {
-    margin-right: ;
+    
     max-width: 100%;
     flex: 0 0 150px;
 }
@@ -192,7 +192,6 @@ span, #work h3 {
     header {
         padding-bottom: 0;
         justify-content: center;
-        position: relative;
     }
     header h1 {
         width: 100px;
@@ -247,10 +246,8 @@ span, #work h3 {
           align-items: center;
           flex-direction: column;
       }
-      footer {
-        flex-direction: column;
-        align-items: flex-start;
-        
+      .contact-icons{
+        flex-direction: row;
       }
       h2 {
           width: 100%;
