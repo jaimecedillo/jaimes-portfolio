@@ -11,10 +11,10 @@ header nav ul {
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    color: rgb(187, 185, 185);
+    color: #FFFFFF;
 }
 header {
-    background-color:black;
+    background-color:#212121;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -29,20 +29,19 @@ header nav ul li a {
     font-weight: lighter;
     font-size: 1.55vw;
     text-shadow: 0 0 10px rgba(182, 169, 169, 0.282);
-    color:rgb(187, 185, 185);
+    color:#FFFFFF;
 }
 header a:hover{
-    background-color:red;
+    background-color:#D32F2F;
     border-radius: 5px;
-    color:white;
     font-size:50px;
     transition: all 500ms;
     font-size-adjust: 20px;
 }
 header nav ul li a:hover {
-    background-color:red;
+    background-color:#D32F2F;
     border-radius: 5px;
-    color:white;
+    color:#FFFFFF;
     font-size:30px;
     transition: all 500ms;
     font-size-adjust: 20px;
@@ -50,12 +49,12 @@ header nav ul li a:hover {
 header h1{
     font-weight: bold;
     font-size: 38px;
-    color:rgb(187, 185, 185);
+    color:#FFFFFF;
     margin-left: 25px;
 }
 header a {
     text-decoration: none;
-    color:rgb(187, 185, 185);
+    color:#FFFFFF;
 }
 header nav {
     margin: 7px 0;
@@ -64,12 +63,12 @@ header nav {
     flex-wrap: wrap;
 }
 .icon{
-    border: 3px solid white;
-    background-color:white;
+    border: 3px solid #FFFFFF;
+    background-color:#FFFFFF;
 }
 .icon:hover{
-    background-color: red;
-    border: 3px solid grey;
+    background-color: #D32F2F;
+    border: 3px solid #757575;
     transform: scale(1.4);
     border-radius: 5px;
 }
@@ -78,25 +77,25 @@ header nav {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content:space-evenly;
-    background-color: black;
+    background-color: #212121;
     padding: 15px 0;
 }
 h2 {
     text-align: right;
     font-style: italic;
     font-size: 45px;
-    color: black;
+    color: #212121;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     letter-spacing: 3px;
     width: 40%;
-    border-bottom: 5px solid grey;
+    border-bottom: 5px solid #757575;
 }
 
 .bio {
     width: 100%;
-    background-color: cyan;
+    background-color: #212121;
     display: flex;
-    border: 5px solid grey;
+    border: 5px solid #757575;
     border-radius: 5px;
     padding: 20px;
     flex-wrap: wrap;
@@ -113,6 +112,7 @@ h2 {
 .bio-paragraph {
     width: 50%;
     margin-left:20px;
+   color:#FFFFFF;
 }
 .bio-paragraph h3 {
     font-size: 45px;
@@ -130,8 +130,8 @@ h2 {
   }
   
   .flex-item {
-    border: 5px solid grey;
-    color: black;
+    border: 5px solid #757575;
+    color: #212121;
     min-height: 150px;
     max-height: 150px;
     flex-basis: calc(50% - 1em);
@@ -156,10 +156,16 @@ h2 {
       flex-basis: 100%;
   }
 span, #work h3 {
-    background-color:rgb(187, 185, 185);
+    background-color:#212121;
     padding: 10px;
     margin:0;
-}
+    color: #FFFFFF;
+    }
+
+    h3 {
+       color: #FFFFFF;
+    }
+
 .about-me .bio .bio-image img {
     max-width: 100%;
 }
@@ -182,6 +188,8 @@ span, #work h3 {
     background-image: url("../images/game.jpg");
 }
 
+
+/*MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
     header {
         padding-bottom: 0;
@@ -205,11 +213,14 @@ span, #work h3 {
         flex: 0 70%;
     }
     .icon {
-        max-width: 40px
+        background-position:-20px 0;
+        height:15px;
+        width:15px;
        }
 
 }
-@media screen and (max-width: 600px) {
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) { 
     header {
         flex-direction: column;
     }
@@ -243,7 +254,31 @@ span, #work h3 {
         font-size: 8vw;
     }
     .icon {
-     min-width: 40px
-     length: 40px;
+        background-position:-32px 0px;
+        height:12px;
+        width:12px;
     }
-}  
+}
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+
+    .icon {
+        height:30px;
+        width:30px;
+    }
+    .contact-icons {
+        padding: 10px 0;
+    }
+    h2 {
+        width: 100%;
+        margin-bottom:12px;
+        font-size: 8vw;
+    }
+    .bio-paragraph h3{
+        font-size: 30px;
+    }
+    .bio-image img {
+        object-fit: scale-down;
+        width: 250px;
+    }
+}
