@@ -14,3 +14,4 @@ It was created to advertise my self for hiring purposes.
 ## Portfolio Link
 [Jaime Cedillo](https://jaimecedillo.github.io/jaimes-portfolio/)
 
+![portfolio screenshot](https://github.com/jaimecedillo/jaimes-portfolio/blob/main/assets/images/screenshot.png)
