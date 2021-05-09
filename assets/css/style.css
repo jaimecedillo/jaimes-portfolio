@@ -135,7 +135,7 @@ h2 {
 }
 
 .flex-item {
-    border: 5px solid var(--grey-color);
+    border: 3px solid var(--grey-color);
     color: var (--dark-color);
     min-height: 150px;
     max-height: 150px;
@@ -149,7 +149,7 @@ h2 {
     background-size: cover;
     font-size: 0.9rem;
     background-position: center;
-    border-radius: 5px;
+    border-radius: 1px;
     background-color:rgb(240, 230, 230, .2);
 }
 .flex-item:hover {
@@ -181,7 +181,7 @@ h3 {
     background-color: var(--red-color);
     border: 3px solid var(--grey-color);
     transform: scale(1.4);
-    border-radius: 5px;
+    border-radius: 1px;
 }
 .contact-icons{
     display: flex;
@@ -200,8 +200,8 @@ h3 {
 .marvel {
     background-image: url("../images/marvel.jpg");
 }
-.fashion {
-    background-image: url("../images/fashion.jpg");
+.workout {
+    background-image: url("../images/workout.jpg");
 }
 .search {
     background-image: url("../images/search.jpg");
